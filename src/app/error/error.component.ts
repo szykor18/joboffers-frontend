@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class ErrorComponent {
 
+  errorMessage = "Error occured! Contant support and..."
 }

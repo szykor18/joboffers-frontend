@@ -1,1 +1,18 @@
-<p>mainpage works!</p>
+<div class="bg-image"></div> 
+
+<div class="container my-5 py-5 text-center">
+    <h1 class="display-1 fw-bold text-warning">Lottery Game</h1>
+    <p class="lead my-4">Welcome to the official Lottery Game. Experience the thrill of winning from the comfort of your home. Play now or check your results!</p>
+    
+    <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+        {{ errorMessage }}
+    </div>
+
+    <div class="d-grid gap-2 col-6 mx-auto my-5">
+        <a routerLink="/play" class="btn btn-lg btn-success">Play Now</a>
+        <a routerLink="/results" class="btn btn-lg btn-primary">Check Results</a>
+    </div>
+
+    <p class="lead my-4">Remember that draws are held every Saturday at 12:00 pm.</p>
+
+</div>
